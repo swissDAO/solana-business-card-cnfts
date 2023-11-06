@@ -18,21 +18,18 @@ const RPC = process.env.NEXT_PUBLIC_RPC_URL || clusterApiUrl("mainnet-beta"); //
 const SOLANA_CONNECTION = new Connection(RPC);
 
 const Page: React.FC = () => {
-  
-
   const CustomToastWithLink = (url: string) => (
     <Link href={url} target="_blank" rel="noopener noreferrer">
       View your business card on the blockchain
     </Link>
   );
 
-  async function convertAndSubmit() {
-    
-  }
+  async function convertAndSubmit() {}
 
   const renderForm = () => {
     return (
-      <form className="bg-white sm:max-w-sm shadow-md rounded px-8 pt-6 pb-8 mb-4 items-center justify-center"
+      <form
+        className="bg-white sm:max-w-sm shadow-md rounded px-8 pt-6 pb-8 mb-4 items-center justify-center"
         style={{
           width: "60vw",
           justifyContent: "center",
@@ -41,8 +38,7 @@ const Page: React.FC = () => {
           alignItems: "center",
           margin: "0 auto",
         }}
-      >
-      </form>
+      ></form>
     );
   };
 

@@ -12,10 +12,6 @@ export type MakeTransactionOutputData = {
 const sharp = require("sharp");
 const fs = require("fs");
 
-async function post(req: NextApiRequest, res: NextApiResponse) {
-  
-}
+async function post(req: NextApiRequest, res: NextApiResponse) {}
 
-export default async function GET(req: NextApiRequest, res: NextApiResponse) {
-
-}
+export default async function GET(req: NextApiRequest, res: NextApiResponse) {}
