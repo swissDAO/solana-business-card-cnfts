@@ -15,7 +15,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { Connection, clusterApiUrl } from "@solana/web3.js";
 import { getDomainKeySync, NameRegistryState } from "@bonfida/spl-name-service";
 
-
 const RPC = process.env.NEXT_PUBLIC_RPC_URL || clusterApiUrl("mainnet-beta"); //replace with your HTTP Provider from https://www.quicknode.com/endpoints
 const SOLANA_CONNECTION = new Connection(RPC);
 
@@ -46,7 +45,7 @@ const Page: React.FC = () => {
     console.log(`The owner of SNS Domain: ${domain} is: `, owner);
     return owner;
   }
-  
+
   async function checkForSolanaDomain(address: string) {
     // if the airdropTo address has the last 4 characters of .sol then getPublicKeyFromSolDomain else return the airdropTo address
     if (address.slice(-4) === ".sol") {
@@ -88,7 +87,8 @@ const Page: React.FC = () => {
 
   const renderForm = () => {
     return (
-      <form className="bg-white sm:max-w-sm shadow-md rounded px-8 pt-6 pb-8 mb-4 items-center justify-center"
+      <form
+        className="bg-white sm:max-w-sm shadow-md rounded px-8 pt-6 pb-8 mb-4 items-center justify-center"
         style={{
           width: "60vw",
           justifyContent: "center",
@@ -319,7 +319,8 @@ const Page: React.FC = () => {
           telegram={telegram}
           website={website}
         />
-        <div className="flex flex-row gap-4 justify-center align-center md:flex-row sm:flex-col xs:flex-col wrap"
+        <div
+          className="flex flex-row gap-4 justify-center align-center md:flex-row sm:flex-col xs:flex-col wrap"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -335,15 +336,19 @@ const Page: React.FC = () => {
           <div
             className="flex flex-col gap-4 justify-center align-center cursor-pointer"
             style={{
-              border:
-                selectedSvg === "svg-container" ? "1px solid yellow" : "",
+              border: selectedSvg === "svg-container" ? "1px solid yellow" : "",
               padding: selectedSvg === "svg-container" ? "5px" : "",
             }}
             onClick={() => {
               setSelectedSvg("svg-container");
             }}
           >
-            <span className="text-white font-bold" style={{paddingLeft: "50px"}}>Style 1</span>
+            <span
+              className="text-white font-bold"
+              style={{ paddingLeft: "50px" }}
+            >
+              Style 1
+            </span>
             <Sample
               firstName={firstName}
               lastName={lastName}
@@ -366,7 +371,12 @@ const Page: React.FC = () => {
               setSelectedSvg("svg-container-style2");
             }}
           >
-            <span className="text-white font-bold" style={{paddingLeft: "50px"}}>Style 2</span>
+            <span
+              className="text-white font-bold"
+              style={{ paddingLeft: "50px" }}
+            >
+              Style 2
+            </span>
             <Sample_Style2
               firstName={firstName}
               lastName={lastName}
@@ -377,7 +387,8 @@ const Page: React.FC = () => {
             />
           </div>
         </div>
-        <div className="flex flex-row gap-4 justify-center align-center md:flex-row sm:flex-col xs:flex-col wrap"
+        <div
+          className="flex flex-row gap-4 justify-center align-center md:flex-row sm:flex-col xs:flex-col wrap"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -403,7 +414,12 @@ const Page: React.FC = () => {
               setSelectedSvg("svg-container-style3");
             }}
           >
-            <span className="text-white font-bold" style={{paddingLeft: "50px"}}>Style 3</span>
+            <span
+              className="text-white font-bold"
+              style={{ paddingLeft: "50px" }}
+            >
+              Style 3
+            </span>
             <Sample_Style3
               firstName={firstName}
               lastName={lastName}
@@ -426,7 +442,12 @@ const Page: React.FC = () => {
               setSelectedSvg("svg-container-style4");
             }}
           >
-            <span className="text-white font-bold" style={{paddingLeft: "50px"}}>Style 4</span>
+            <span
+              className="text-white font-bold"
+              style={{ paddingLeft: "50px" }}
+            >
+              Style 4
+            </span>
             <Sample_Style4
               firstName={firstName}
               lastName={lastName}
