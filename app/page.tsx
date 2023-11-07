@@ -192,12 +192,14 @@ const Page: React.FC = () => {
         <div className="flex flex-col gap-4 justify-center align-center md:flex-col sm:flex-col xs:flex-col w-fit self-center">
           <div
             className="flex flex-col gap-4 justify-center align-center cursor-pointer"
-            style={{ border: selectedSvg === "svg-container" ? "1px solid yellow" : ""}}
-            onClick={() => {setSelectedSvg("svg-container")}}
+            style={{
+              border: selectedSvg === "svg-container" ? "1px solid yellow" : "",
+            }}
+            onClick={() => {
+              setSelectedSvg("svg-container");
+            }}
           >
-            <span className="text-white font-bold pl-5">
-              Style 1
-            </span>
+            <span className="text-white font-bold pl-5">Style 1</span>
             <Sample
               firstName={data ? JSON.parse(data).firstName : ""}
               lastName={data ? JSON.parse(data).lastName : ""}
@@ -209,14 +211,17 @@ const Page: React.FC = () => {
           </div>
           <div
             className="flex flex-col gap-4 justify-center align-center cursor-pointer"
-            style={{border: selectedSvg === "svg-container-style2" ? "1px solid yellow" : ""}}
+            style={{
+              border:
+                selectedSvg === "svg-container-style2"
+                  ? "1px solid yellow"
+                  : "",
+            }}
             onClick={() => {
               setSelectedSvg("svg-container-style2");
             }}
           >
-            <span className="text-white font-bold pl-5">
-              Style 2
-            </span>
+            <span className="text-white font-bold pl-5">Style 2</span>
             <Sample_Style2
               firstName={data ? JSON.parse(data).firstName : ""}
               lastName={data ? JSON.parse(data).lastName : ""}
@@ -228,14 +233,17 @@ const Page: React.FC = () => {
           </div>
           <div
             className="flex flex-col gap-4 justify-center align-center cursor-pointer"
-            style={{ border: selectedSvg === "svg-container-style3" ? "1px solid yellow" : ""}}
+            style={{
+              border:
+                selectedSvg === "svg-container-style3"
+                  ? "1px solid yellow"
+                  : "",
+            }}
             onClick={() => {
               setSelectedSvg("svg-container-style3");
             }}
           >
-            <span className="text-white font-bold pl-5">
-              Style 3
-            </span>
+            <span className="text-white font-bold pl-5">Style 3</span>
             <Sample_Style3
               firstName={data ? JSON.parse(data).firstName : ""}
               lastName={data ? JSON.parse(data).lastName : ""}
@@ -247,14 +255,17 @@ const Page: React.FC = () => {
           </div>
           <div
             className="flex flex-col gap-4 justify-center align-center cursor-pointer"
-            style={{border: selectedSvg === "svg-container-style4" ? "1px solid yellow" : ""}}
+            style={{
+              border:
+                selectedSvg === "svg-container-style4"
+                  ? "1px solid yellow"
+                  : "",
+            }}
             onClick={() => {
               setSelectedSvg("svg-container-style4");
             }}
           >
-            <span className="text-white font-bold pl-5">
-              Style 4
-            </span>
+            <span className="text-white font-bold pl-5">Style 4</span>
             <Sample_Style4
               firstName={data ? JSON.parse(data).firstName : ""}
               lastName={data ? JSON.parse(data).lastName : ""}
@@ -265,6 +276,16 @@ const Page: React.FC = () => {
             />
           </div>
         </div>
+        {selectedSvg != "" && (
+          <div className="flex justify-center">
+            <button
+              className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              onClick={() => convertAndSubmit()}
+            >
+              Create cNFT
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
