@@ -72,6 +72,43 @@ const Page: React.FC = () => {
         image: svg,
       }),
     });
+
+    const response_status = res.status;
+    const res_text = await JSON.parse(await res.text());
+    console.log("res_text", res_text);
+    
+    const asset_id = res_text.assetId;
+    console.log("asset_id", asset_id);
+    
+    const xray_url = `https://xray.helius.xyz/token/${asset_id}?network=mainnet`;
+    
+    if (response_status === 200) {
+      console.log("business card minted");
+      // get json data from response
+      console.log("xray url", xray_url);
+      toast.success(CustomToastWithLink(xray_url), {
+        position: "top-right",
+        autoClose: false,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+        theme: "dark",
+      });
+    } else if (response_status === 500) {
+      console.log("error minting business card");
+      toast.error("Error minting business card", {
+        position: "top-right",
+        autoClose: false,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+        theme: "dark",
+      });
+    }
   }
 
   const renderForm = () => {
