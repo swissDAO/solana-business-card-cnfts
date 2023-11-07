@@ -10,8 +10,10 @@ async function post(req: NextApiRequest, res: NextApiResponse) {
     try {
       const fileName = uuidv4();
       const privateKeySecret = process.env.NEXT_PUBLIC_WALLET_PRIVATE_KEY;
+      const url = process.env.NEXT_PUBLIC_RPC_URL!;
+      const image = req.body.image;
+      const info = JSON.parse(req.body.info);
       const {
-        image,
         firstName,
         lastName,
         jobTitle,
@@ -22,7 +24,7 @@ async function post(req: NextApiRequest, res: NextApiResponse) {
         website,
         airdropTo,
         creatorAddress,
-      } = req.body;
+      } = info;
 
       const getIrys = async () => {
         const url = "https://node1.irys.xyz";
@@ -81,7 +83,6 @@ async function post(req: NextApiRequest, res: NextApiResponse) {
       };
       const image_url = await uploadImage();
 
-      const url = process.env.NEXT_PUBLIC_RPC_URL!;
       const mintCompressedNft = async () => {
         const response = await fetch(url, {
           method: "POST",
