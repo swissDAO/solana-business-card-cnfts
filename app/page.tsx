@@ -76,12 +76,12 @@ const Page: React.FC = () => {
     const response_status = res.status;
     const res_text = await JSON.parse(await res.text());
     console.log("res_text", res_text);
-    
+
     const asset_id = res_text.assetId;
     console.log("asset_id", asset_id);
-    
+
     const xray_url = `https://xray.helius.xyz/token/${asset_id}?network=mainnet`;
-    
+
     if (response_status === 200) {
       console.log("business card minted");
       // get json data from response
