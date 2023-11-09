@@ -1,71 +1,13 @@
 {
-    "Section_0": {
-        "Lesson_1_What_are_we_building.md": {
-            "title": "What are we building?",
-            "next": null,
-            "previous": null
-        }
-    },
-    "Section_1": {
-        "Lesson_1_Grabbing_the_essentials.md": {
-            "title": "Grabbing the essentials",
-            "next": null,
-            "previous": null
-        }
-    },
-    "Section_2": {
-        "Lesson_1_Creating_form_data.md": {
-            "title": "Creating form data",
-            "next": "Lesson_2_Implementing_SVG_Samples.md",
-            "previous": null
-        },
-        "Lesson_2_Implementing_SVG_Samples.md": {
-            "title": "Implementing SVG Samples",
-            "next": "Lesson_3_Convert_and_submit_function.md",
-            "previous": "Lesson_1_Creating_form_data.md"
-        },
-        "Lesson_3_Convert_and_submit_function.md": {
-            "title": "Convert and submit function",
-            "next": null,
-            "previous": "Lesson_2_Implementing_SVG_Samples.md"
-        }
-    },
-    "Section_3": {
-        "Lesson_1_Minting_a_Compressed_NFT.md": {
-            "title": "Minting a Compressed NFT",
-            "next": "Lesson_2_Creating_Mint_API_Route.md",
-            "previous": null
-        },
-        "Lesson_2_Creating_Mint_API_Route.md": {
-            "title": "Creating Mint API Route",
-            "next": null,
-            "previous": "Lesson_1_Minting_a_Compressed_NFT.md"
-        }
-    },
-    "Section_4": {
-        "Lesson_1_Building_a_gallery.md": {
-            "title": "Building a gallery",
-            "next": null,
-            "previous": null
-        }
-    },
-    "Section_5": {
-        "Lesson_1_Final_touches.md": {
-            "title": "Final touches",
-            "next": "Lesson_2_Deployment_on_Vercel.md",
-            "previous": null
-        },
-        "Lesson_2_Deployment_on_Vercel.md": {
-            "title": "Deployment on Vercel",
-            "next": null,
-            "previous": "Lesson_1_Final_touches.md"
-        }
-    },
-    "Section_6": {
-        "Lesson_1_Recap.md": {
-            "title": "Recap",
-            "next": null,
-            "previous": null
-        }
-    }
+    "Section_0": "Lesson_1_What_are_we_building.md",
+    "Section_1": "Lesson_1_Grabbing_the_essentials.md",
+    "Section_2": "Lesson_1_Creating_form_data.md",
+    "Section_2_a": "Lesson_2_Implementing_SVG_Samples.md",
+    "Section_2_b": "Lesson_3_Convert_and_submit_function.md",
+    "Section_3": "Lesson_1_Minting_a_Compressed_NFT.md",
+    "Section_3_a": "Lesson_2_Creating_Mint_API_Route.md",
+    "Section_4": "Lesson_1_Building_a_gallery.md",
+    "Section_5": "Lesson_1_Final_touches.md",
+    "Section_5_a": "Lesson_2_Deployment_on_Vercel.md",
+    "Section_6": "Lesson_1_Recap.md"
 }
