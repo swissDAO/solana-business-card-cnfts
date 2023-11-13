@@ -3,11 +3,11 @@
 You have now made a cNFT minter that dynamically creates a cNFT from an in-browser image. That's pretty cool if you ask me!
 
 Here is a recap on what we covered:
-- [x] Generate a digital business card as a SVG in your browser
-- [x] Convert that SVG to a PNG and upload it to Irys (formerly Bundlr)
-- [x] Mint the PNG as a cNFT using Helius
-- [x] Display all of the business card cNFTs in a gallery
-- [x] Deploy our site Live to the world and allow people to mint business cards ==**without connecting their wallet**== 
+- [✅] Generate a digital business card as a SVG in your browser
+- [✅] Convert that SVG to a PNG and upload it to Irys (formerly Bundlr)
+- [✅] Mint the PNG as a cNFT using Helius
+- [✅] Display all of the business card cNFTs in a gallery
+- [✅] Deploy our site Live to the world and allow people to mint business cards ==**without connecting their wallet**== 
 
 If you need compare your final code, you can check the [complete solution](https://github.com/swissDAO/solana-business-card-cnfts/tree/final).
 
