@@ -1,4 +1,4 @@
-### 🚢 Deploy on Vercel
+## 🚢 Deploy on Vercel
 
 Everything is working, woo-hoo! Now it's time to get off localhost and ship our creation to the masses!
 

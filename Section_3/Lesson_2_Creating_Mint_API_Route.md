@@ -1,4 +1,4 @@
-### 🎫 Let's get minting
+## 🎫 Let's get minting
 
 The first thing we are going to do is set up our basic server functions and establish a connection to Irys inside our `mint.tsx` API endpoint. If you are unfamiliar on how API routes work with Next.JS you can review the details [here](https://nextjs.org/docs/pages/building-your-application/routing/api-routes).
 

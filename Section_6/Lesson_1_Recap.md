@@ -7,11 +7,11 @@ Here is a recap on what we covered:
 - [✅] Convert that SVG to a PNG and upload it to Irys (formerly Bundlr)
 - [✅] Mint the PNG as a cNFT using Helius
 - [✅] Display all of the business card cNFTs in a gallery
-- [✅] Deploy our site Live to the world and allow people to mint business cards ==**without connecting their wallet**== 
+- [✅] Deploy our site Live to the world and allow people to mint business cards **without connecting their wallet**
 
 If you need compare your final code, you can check the [complete solution](https://github.com/swissDAO/solana-business-card-cnfts/tree/final).
 
-Now spice it up! Don't just stop with my business card model, create your own SVG with something like this [SVG Editor](https://boxy-svg.com/), or add it to something you've already built.
+**Now spice it up!** Don't just stop with my business card model, create your own SVG with something like this [SVG Editor](https://boxy-svg.com/), or add it to something you've already built.
 
 Maybe you have a Solana Pay store you want to hook it up to it for receipts or loyalty cNFTs, or a game where the user can get a cNFT of their score.
 

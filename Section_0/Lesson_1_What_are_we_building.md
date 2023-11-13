@@ -19,7 +19,7 @@ We will be building a *simplified* version of a cNFT minter using Helius' API. T
 - [ ] Convert that SVG to a PNG and upload it to Irys (formerly Bundlr)
 - [ ] Mint the PNG as a cNFT using Helius
 - [ ] Display all of the business card cNFTs in a gallery
-- [ ] Deploy our site Live to the world and allow people to mint business cards ==**without connecting their wallet**== 
+- [ ] Deploy our site Live to the world and allow people to mint business cards **without connecting their wallet**
 
 Once all of this is said and done, you will have a solid grasp on cNFTs and how to **quickly** generate them.
 
